@@ -1,5 +1,11 @@
 Project Title: Simple Notes App (Single User)
 
+Start the Backend
+npm start
+
+Start the Frontend
+npm run dev
+
 Frontend (React):
 • A form to add a note (title + content)
 • A list that displays all notes
