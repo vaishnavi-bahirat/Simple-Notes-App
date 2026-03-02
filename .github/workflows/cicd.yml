@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: CI
 
 on:
   push:
@@ -9,18 +9,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: Install Backend Dependencies
+      - name: Install Backend
         working-directory: ./Backend
         run: npm install
 
-      - name: Install Frontend Dependencies
-        working-directory: ./React
+      - name: Install React
+        working-directory: ./Backend
         run: npm install
