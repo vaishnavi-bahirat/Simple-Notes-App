@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/username/project.git'
+                git 'https://github.com/vaishnavi-bahirat/Simple-Notes-App'
             }
         }
 
